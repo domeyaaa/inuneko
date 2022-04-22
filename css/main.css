@@ -1,0 +1,275 @@
+.wrapper2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+}
+
+.logo-home {
+    position: absolute;
+    top: 5%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-home img {
+    width: 300px;
+}
+
+.welcome-detail {
+    font-size: 22px;
+    width: 50%;
+    font-weight: 200;
+    margin-bottom: 20px;
+}
+
+.header-detail {
+    text-align: center;
+    font-size: 34px;
+}
+
+.box-btn {
+    width: 50%;
+}
+
+.btn-login {
+    background-color: #71c9ce;
+    color: #f9f7f7;
+    font-size: 30px;
+    width: 100%;
+    border: none;
+    padding: 5px 0;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.btn-login:hover {
+    background-color: #55a4a5;
+}
+
+.btn-login:hover {
+    cursor: pointer;
+}
+
+
+
+.all-box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+}
+
+.box {
+    width: 20vw;
+    height: 50vh;
+    background-color: #71c9ce;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: #f9f7f7;
+    flex-direction: column;
+    transition: all .3s;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+    margin:0 1.5em;
+}
+
+.box:hover {
+    box-shadow: 0px 0px 30px #555;
+    font-size: 35px;
+    background-color: #9ddde0;
+    cursor: pointer;
+    width: 20.5vw;
+    height: 50.5vh;
+}
+
+.box i {
+    font-size: 90px;
+}
+
+.menu {
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    color: #55a4a5;
+    font-size: 50px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.middle{
+    vertical-align: middle;
+}
+
+span.send-otp{
+    background-color: back;
+    float: right;
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+span.send-otp:hover{
+    cursor: pointer;
+}
+
+/* ---------------POP-UP------------------ */
+
+.sub_logo img {
+    width: 200px;
+}
+
+.popup .active .overlay {
+    display: block;
+}
+
+.popup .overlay {
+    display: none;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0,.5);
+    z-index: 3;
+}
+
+
+
+.popup .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    
+    width: 40%;
+    min-width: 300px;
+    z-index: 4;
+    text-align: center;
+    padding: 40px;
+    box-sizing: border-box;
+    color: black;
+    border-radius: 10px;
+    background-color: #f9f7f7;
+    transform: translate(-50%, -50%) scale(0);
+    -webkit-transform: translate(-50%, -50%) scale(0);
+    -moz-transform: translate(-50%, -50%) scale(0);
+    -ms-transform: translate(-50%, -50%) scale(0);
+    -o-transform: translate(-50%, -50%) scale(0);
+    box-shadow:1px 2px 20px 2px #5c5c5c ;
+}
+
+.popup .close-btn {
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 35px;
+    height: 35px;
+    color: #000;
+    font-size: 25px;
+    font-weight: 200;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    font-weight: 400;
+}
+
+
+.popup.active .content {
+    transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -webkit-transition: all 300ms ease-in-out;
+    -ms-transition: all 300ms ease-in-out;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.input-group {
+    flex-direction: column;
+}
+
+.input-group input {
+    border: none;
+    font-size: 20px;
+    font-weight: 200;
+    padding: 10px 20px;
+    width: 100%;
+    background-color: #E7E8E8;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+button[name=login_user], 
+button[name=signupBtn],
+button[name=send_email],
+button[name=sendNewPassword] {
+    border-radius: 5px;
+    background-color: #71c9ce;
+    width: 100%;
+    font-size: 22px;
+    padding: 5px 0;
+    color: #f9f7f7;
+    border: none;
+    margin-bottom: 10px;
+}
+
+button[name=send_email]{
+    margin-top: 15px;
+}
+
+button[name=login_user]:hover, button[name=signupBtn]:hover,
+button[name=sendNewPassword]:hover,
+button[name=send_email]:hover {
+    cursor: pointer;
+    background-color: #55a4a5;
+}
+
+button[name=signupBtn]:hover {
+    background-color: #f0f0f0;
+}
+
+.forgot-btn {
+    color: #666;
+}
+
+.forgot-btn:visited {
+    color: #666;
+}
+
+button[name=signupBtn] {
+    margin-top: 10px;
+    border: 3px solid #71c9ce;
+    background-color: #F9F7F7;
+    color: #666;
+    margin-top: 20px;
+}
+
+
+/* -------------------------------- */
+
+
+
+@media screen and (max-width:1300px) {
+    .header-detail {
+        font-size: 26px;
+    }
+}

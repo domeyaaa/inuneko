@@ -1,0 +1,127 @@
+.back{
+    position: fixed;
+    z-index: 100;
+}
+
+
+div.container{
+    font-size: 22px;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-weight: 500;
+    background-color: #F9F7F7;
+    font-weight: 200;
+    padding-top: 25vh;
+}
+
+
+div.header{
+    position: fixed;
+    background-color: #F9F7F7;
+}
+
+div.all-box-post{
+    display: flex;
+    padding-bottom: 50px;
+    width: 85vw;
+}
+
+div.count-post{
+    background-color: #F9F7F7;
+    position: fixed;
+    left: 10%;
+    top: 20vh;
+    height: 5vh;
+    width: 100%;
+    font-weight: 400;
+    z-index: 10;
+    font-size: 26px;
+}
+
+div.post-name{
+    font-weight: 400;
+    border-bottom: 3px solid #cfcfcf;
+}
+
+div.img-post{
+    width: 20%;
+    height:10em;
+    width: 10em;
+    background-color: aqua;
+    background-position: center;
+    background-size: cover;
+}
+
+div.img-post:hover{
+    cursor: pointer;
+}
+
+div.col-detail{
+    width: 50%;
+    padding-left: 40px;
+}
+
+div.col-detail:hover{
+    cursor: pointer;
+}
+
+div.post-detail{
+    min-height: 160px;
+    max-height: 160px;
+    overflow: hidden;
+}
+
+div.col-control{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.post-date{
+    color: #757575;
+    float: right;
+}
+
+div.btn-group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+}
+
+div.btn-group button{
+    font-size: 22px;
+    margin-right: 10px;
+    border: none;
+    width: 150px;
+    padding: 5px 0;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+div.btn-group button:hover{
+    cursor: pointer;
+    transition: .15s;
+    -webkit-transition: .15s;
+    -moz-transition: .15s;
+    -ms-transition: .15s;
+    -o-transition: .15s;
+}
+
+
+.btnDel{
+    color: #F9F7F7;
+    background-color: #ff4444;
+}
+
+.btnDel:hover{
+    background-color: #c03a3a;
+}
+
+.btnEdit:hover{
+    background-color: #cfcfcf;
+}

@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+}
+
+body{
+    background-color: #F9F7F7;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #f9f7f7;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+a {
+    color: #71C9CE;
+}
+
+button:focus {
+    outline: none;
+}
+
+input:focus {
+    outline: none;
+}
+
+.error {
+    text-align: center;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+    color: #E64949;
+}
+
+.hambergur {
+    position: fixed;
+    top: 50px;
+    right: 50px;
+    z-index: 1000;
+}
+
+.hambergur:hover {
+    cursor: pointer;
+}
+
+.back {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    cursor: pointer;
+}
+
+.material-icons.md-18 {
+    font-size: 22px;
+}
+
+.material-icons.md-24 {
+    font-size: 30px;
+}
+
+.material-icons.md-36 {
+    font-size: 40px;
+}
+
+.material-icons.md-48 {
+    font-size: 65px;
+}
+
+.nav-overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+    overflow-x: hidden;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    box-shadow: -5px 0px 15px #cfcfcf;
+}
+
+.overlay-content {
+    color: #55a4a5;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    flex-direction: column;
+    height: 100vh;
+    padding: 0px 100px;
+}
+
+.hamBtn {
+    color: #71C9CE;
+    font-size: 30px;
+    transition: all .3s;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+    z-index: 500;
+}
+
+.hamBtn:hover {
+    color: #55a4a5;
+    cursor: pointer;
+}
+
+.nav-overlay a {
+    text-decoration: none;
+    font-size: 30px;
+    color: #000;
+    display: block;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.nav-overlay a:hover, .nav-overlay a:focus {
+    color: #55a4a5;
+}
+
+.nav-overlay .closebtn {
+    position: absolute;
+    top: 10px;
+    left: 50px;
+    color: #71C9CE;
+    font-size: 35px;
+}
+
+.profile-user {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+.username {
+    color: #000;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+.logout-btn {
+    font-size: 30px;
+    color: #E64949;
+}
+
+.logout-btn:hover {
+    cursor: pointer;
+}
+
+.box-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 100px;
+}
+
+.top-box {
+    padding-top: 10%;
+    border-bottom: 3px dashed #cecece;
+    height: 40%;
+    flex-direction: column;
+}
+
+.top-box .img-profile {
+    height: 100px;
+    width: 100px;
+    background-color: #71C9CE;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    box-shadow: 3px 4px 5px 1px #555;
+}
+
+.middle-box {
+    height: 40%;
+    flex-direction: column;
+}
+
+.bottom-box {
+    border-top: 3px dashed #cecece;
+    height: 20%;
+}
+
+div.header {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 16vh;
+    margin-top:50px;
+    z-index: 50;
+}
+
+div.header h2 {
+    font-size: 34px;
+    color: #555;
+}
+
+nav.nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background-color: #f9f7f7;
+    box-shadow: 0 2px 5px #cfcfcf;
+    z-index: 3000;
+}
+
+nav.nav-bar div.logo img {
+    height: 70px;
+}
+
+nav.nav-bar div.logo img:hover{
+    cursor: pointer;
+}
+
+nav div.nav-ct {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav.nav-bar .logo {
+    width: 20%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav div.ham {
+    width: 20%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.breadcrumb {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    height: 40px;
+    width: 100%;
+    padding: 0 20%;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 200;
+    background-color: #f9f7f7;
+    z-index: 2000;
+}
+
+div.breadcrumb ul {
+    list-style: none;
+    color: #71C9CE;
+}
+
+div.breadcrumb ul li {
+    display: inline;
+    
+}
+
+.active {
+    color: #55a4a5;
+    text-decoration: none;
+    cursor: none;
+}   
+
+.active:hover{
+    cursor: default;
+}
+
+.col {
+    background-color: #F9F7F7;
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.col2 {
+    height: 70vh;
+    width: 40%;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.flex1 {
+    justify-content: center;
+}
+
+div.background-pop-up {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .7);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    transition: 5s;
+    -webkit-transition: 5s;
+    -moz-transition: 5s;
+    -ms-transition: 5s;
+    -o-transition: 5s;
+}
+
+div.pop-up {
+    width: 35%;
+    height: 35%;
+    background-color: #f9f7f7;
+    border: 3px solid #71C9CE;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #55a4a5;
+    font-size: 22px;
+    transition: .3s;
+}
+
+div.pop-up button {
+    background-color: #71C9CE;
+    border: none;
+    color: #f9f7f7;
+    font-size: 22px;
+    width: 8em;
+    padding: 5px;
+    margin-top: 5px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+div.pop-up button:hover {
+    cursor: pointer;
+}
+
+.post-hover:hover{
+    color: #71C9CE;
+}
+
+.profile-hover:hover{
+    color: #71C9CE;
+}
+.number{
+    padding: 5px 0;
+    padding-bottom: 20px;
+}
